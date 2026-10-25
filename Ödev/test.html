@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Çocuk Hakları - Farkındalık Testi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Quicksand:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="page-loader" class="page-loader"></div>
+
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">🎈 Çocuk Hakları</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Ana Sayfa</a></li>
+      <li><a href="haklar.html">Çocuk Hakları</a></li>
+      <li><a href="test.html" class="active">Farkındalık Testi</a></li>
+      <li><a href="iletisim.html">İletişim & Duvar</a></li>
+      <li><button id="theme-toggle" class="theme-btn" title="Temayı Değiştir">🌙</button></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <div class="quiz-box">
+      <div id="quiz-header">
+        <div class="quiz-progress-bar">
+          <div id="quiz-progress" class="quiz-progress-fill"></div>
+        </div>
+        <div class="quiz-status">
+          <span id="question-count">Soru 1 / 4</span>
+          <span id="quiz-score">Puan: 0</span>
+        </div>
+      </div>
+
+      <div id="quiz-body">
+        <h2 id="question-text">Soru yükleniyor...</h2>
+        <div id="options-container" class="options-grid"></div>
+      </div>
+
+      
+      <div id="quiz-result" class="result-card hidden">
+        <span class="result-badge">🎉 TEBRİKLER!</span>
+        <h2>Farkındalık Testini Tamamladın!</h2>
+        <p id="final-score-text">Toplam Puanın: 100/100</p>
+
+        
+        <div class="result-img-container">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVZAq6R3LnyVzl_kLfxATV5YqcqnwHbhNldfFyOj3h_Gmhaa3bodZhpkc&s=10" alt="Mutlu Çocuk" class="result-photo">
+        </div>
+
+        <div class="certificate">
+          <p class="cert-title">📜 ÇOCUK HAKLARI ELÇİSİ SERTİFİKASI</p>
+          <p>Çocuk hakları farkındalık testini başarıyla tamamlayarak çocuk haklarının savunucusu olmaya hak kazandınız!</p>
+        </div>
+        <button onclick="resetQuiz()" class="btn btn-primary">Testi Tekrar Çöz 🔄</button>
+      </div>
+  </main>
+
+  <footer>
+    <p>© 2026 Çocuk Hakları Farkındalık Projesi | Sevgi ve Eşitlikle Tasarlandı 🎈</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
